@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+
+<body>
+    <!-- Forms -->
+
+    <form action="">
+        <p>
+            This is where the control will appear!
+        </p>
+        <!-- text input -->
+        <p>
+            <b>
+                Username:
+            </b>
+            <input type="text" name="username" size="15" maxlength="30">
+        </p>
+        <!-- password -->
+        <p>
+            <b>Password:</b>
+            <input type="password" name="
+            password" size="15" maxlength="30">
+        </p>
+        <!-- text area -->
+        <p>
+            What did you think of this dress?
+            Give your Reviews
+            <textarea name="review" id="" cols="30" rows="10">give your review...</textarea>
+        </p>
+        <!-- Radio Button -->
+        <p>
+            Select your favourite game:
+            <br>
+            <input type="radio" name="games" id="" value="Hockey" checked="checked"> Hockey
+            <input type="radio" name="games" id="" value="Cricket" checked="checked"> Cricket
+            <input type="radio" name="games" id="" value="Badminton" checked="checked"> Badminton
+        </p>
+        <!--CheckBox-->
+        <p>
+            Select your favourite game:
+            <br>
+            <input type="checkbox" name="games" id="" value="Hockey" checked="checked"> Hockey
+            <input type="checkbox" name="games" id="" value="Cricket" checked="checked"> Cricket
+            <input type="checkbox" name="games" id="" value="Badminton" checked="checked"> Badminton
+        </p>
+        <!-- Drop Down List Box / Select Box -->
+        <!-- use select tag & option tag -->
+        <p>
+            Which device do you want to listen music on?
+            <select name="devices" id="">
+                <option value="Radio">Radio</option>
+                <option value="computer">computer</option>
+                <option value="ipod">ipod</option>
+            </select>
+        </p>
+        <!-- Multiple selection box -->
+        <!-- Select more than one -->
+        <p>
+            Do you play any of the following instruments?
+            <select name="instruments" id="" size="3" multiple="multiple">
+                <option value="guitar" selected="select">guitar</option>
+                <option value="drums" selected="selected">Drums</option>
+                <option value="bass" selected="selected">bass</option>
+                <option value="flute">flute</option>
+            </select>
+        </p>
+        <!-- File input -->
+        <!-- use file in your input -->
+        <p>
+            Upload your photo here:
+            <input type="file" name="picture" id="">
+            <br>
+            <input type="submit" value="Upload" id="">
+        </p>
+        <!-- Submit Button -->
+        <!-- to submit a form etc -->
+        <!-- use type= submit -->
+        <p>
+            Subscribe:
+            <input type="text" name="email form" id="">
+            <input type="submit" name="submit" value="submit">
+        </p>
+        <!-- image button -->
+        <!-- type=image -->
+        <p>
+            Subscribe to our email list:
+            <input type="text" name="email">
+            <input type="image" src="c:\Users\Mg\Downloads\Thank You!.png" width="10" height="10">
+
+        </p>
+        <!-- button tag -->
+        <!-- you can combine images & texts inside the button tag -->
+        <button><img src="c:\Users\Mg\Downloads\Thank You!.png" alt="thankyou" width="10" height="10">Add</button>
+        <!-- Hidden  type -->
+        <!-- <input type="hidden" name="bookmark" id="" value="lyrics"> -->
+        <br>
+        <br>
+        <!-- /label tag -->
+        <label for="">Age
+            <input type="text" name="age" id="">
+        </label>
+        <br>
+        gender:
+        <input id="female" type="radio" name="gender">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+        <br>
+        <!-- Grouping form -->
+        <!-- use fieldset tag & legend tag -->
+        <!-- fieldset is used to control togethr -->
+        <!-- Legend is used to give a caption & a purpose -->
+        <fieldset>
+            <legend>Contact details</legend>
+            <p>Email:
+                <input type="text" name="email" id="">
+
+            </p>
+            <p>
+                Mobile:
+                <input type="text" name="Mobile" id="">
+            </p>
+        </fieldset>
+        <br>
+        <!-- fieldset with labels -->
+        <fieldset>
+            <legend>Contact Details</legend>
+            <label for="">Email: <br>
+                <input type="text" name="Email" id=""></label>
+            <br>
+            <label for="">Mobile Number: <br>
+                <input type="text" name="Mobile Number" id=""></label>
+            <br>
+            <label for="">Telephone: <br>
+                <input type="text" name="Telephone" id=""></label>
+            <br>
+        </fieldset>
+        <!-- Form Validation -->
+        <label for="Username">Username:</label>
+        <input type="text" name="Username" id="" required="required">
+        <br>
+        <label for="Password">password:</label>
+        <input type="text" name="Password" id="" required="required">
+        <br>
+        <input type="submit" name="submit" id="">
+        <br>
+        <br>
+        <!-- Date input -->
+        <label for="">Date:</label>
+        <input type="date" name="Last" id="">
+        <input type="submit" name="submit" id="" >
+         <br>
+         <br>
+         <!-- email & url input -->
+         <p>Please enter your email address:</p>
+         <input type="email" name="Email" id="">
+         <input type="submit" name="Submit" id="">
+         <br>
+    </form>
+</body>
+
+</html>
